@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 260" width="840" height="260" role="img" aria-labelledby="t d">
   <title id="t">Vatsal Mehta</title>
-  <desc id="d">AI and full-stack developer in Ahmedabad. Builds multi-camera vision systems, LLM agents and RAG pipelines, and satellite change detection. The illustration shows a vehicle's route being reconstructed across city cameras.</desc>
+  <desc id="d">Works on deep learning, computer vision and NLP: detection, tracking and OCR, LLM agents and RAG pipelines, and satellite change detection. The illustration shows a vehicle's route being reconstructed across city cameras.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
     .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
@@ -8,7 +8,7 @@
     .tag { font-size: 17px; fill: #c7d9e8; }
     .prompt { font-size: 17px; fill: #5b7c99; }
     .phrase { font-size: 17px; fill: #7dd3fc; opacity: 0; }
-    .static { font-size: 15px; fill: #7dd3fc; display: none; }
+    .static { font-size: 14px; fill: #7dd3fc; display: none; }
     .stamp { font-size: 9px; fill: #9fc3e0; }
 
     /* Typed line: a cover slides right one character at a time. */
@@ -154,10 +154,10 @@
 
     <!-- Text -->
     <text class="sans name" x="44" y="100">Vatsal Mehta</text>
-    <text class="sans tag" x="45" y="134">AI and full-stack developer · Ahmedabad, India</text>
+    <text class="sans tag" x="45" y="134">Deep learning · computer vision · NLP</text>
 
     <text class="mono prompt" x="45" y="184">&gt;</text>
-    <text class="mono phrase p1" x="65.4" y="184" textLength="275.4" lengthAdjust="spacing">multi-camera vision systems</text>
+    <text class="mono phrase p1" x="65.4" y="184" textLength="275.4" lengthAdjust="spacing">detection, tracking and OCR</text>
     <text class="mono phrase p2" x="65.4" y="184" textLength="285.6" lengthAdjust="spacing">LLM agents and RAG pipelines</text>
     <text class="mono phrase p3" x="65.4" y="184" textLength="265.2" lengthAdjust="spacing">satellite change detection</text>
     <g clip-path="url(#typezone)">
@@ -166,7 +166,7 @@
         <rect class="cursor" x="67.4" y="168" width="9" height="20" fill="#7dd3fc"/>
       </g>
     </g>
-    <text class="mono static" x="65.4" y="184">vision systems · LLM agents · satellite imagery</text>
+    <text class="mono static" x="65.4" y="184">vision · NLP · LLM agents · remote sensing</text>
   </g>
   <rect x="0.5" y="0.5" width="839" height="259" rx="13.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.18"/>
 </svg>
