@@ -94,6 +94,7 @@
 
   <defs>
     <clipPath id="card"><rect width="840" height="260" rx="14"/></clipPath>
+    <clipPath id="typezone"><rect x="60" y="160" width="312" height="36"/></clipPath>
     <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0.5" stop-color="#1565c0" stop-opacity="0"/>
       <stop offset="1" stop-color="#1565c0" stop-opacity="0.34"/>
@@ -159,9 +160,11 @@
     <text class="mono phrase p1" x="65.4" y="184" textLength="275.4" lengthAdjust="spacing">multi-camera vision systems</text>
     <text class="mono phrase p2" x="65.4" y="184" textLength="285.6" lengthAdjust="spacing">LLM agents and RAG pipelines</text>
     <text class="mono phrase p3" x="65.4" y="184" textLength="265.2" lengthAdjust="spacing">satellite change detection</text>
-    <g class="typer">
-      <rect x="65.4" y="164" width="300" height="28" fill="#0b2239"/>
-      <rect class="cursor" x="67.4" y="168" width="9" height="20" fill="#7dd3fc"/>
+    <g clip-path="url(#typezone)">
+      <g class="typer">
+        <rect x="65.4" y="164" width="300" height="28" fill="#0b2239"/>
+        <rect class="cursor" x="67.4" y="168" width="9" height="20" fill="#7dd3fc"/>
+      </g>
     </g>
     <text class="mono static" x="65.4" y="184">vision systems · LLM agents · satellite imagery</text>
   </g>
