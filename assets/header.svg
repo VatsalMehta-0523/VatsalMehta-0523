@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 260" width="840" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Vatsal Mehta</title>
+  <desc id="d">AI and full-stack developer in Ahmedabad. Builds multi-camera vision systems, LLM agents and RAG pipelines, and satellite change detection. The illustration shows a vehicle's route being reconstructed across city cameras.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .name { font-size: 46px; font-weight: 700; fill: #ffffff; letter-spacing: -0.5px; }
+    .tag { font-size: 17px; fill: #c7d9e8; }
+    .prompt { font-size: 17px; fill: #5b7c99; }
+    .phrase { font-size: 17px; fill: #7dd3fc; opacity: 0; }
+    .static { font-size: 15px; fill: #7dd3fc; display: none; }
+    .stamp { font-size: 9px; fill: #9fc3e0; }
+
+    /* Typed line: a cover slides right one character at a time. */
+    .typer { animation: type 12s infinite; }
+    .cursor { animation: blink 1s steps(1, end) infinite; }
+    .p1 { animation: p1 12s linear infinite; }
+    .p2 { animation: p2 12s linear infinite; }
+    .p3 { animation: p3 12s linear infinite; }
+    @keyframes type {
+      0%     { transform: translateX(0);       animation-timing-function: steps(27, end); }
+      10%    { transform: translateX(275.4px); animation-timing-function: linear; }
+      25.83% { transform: translateX(275.4px); animation-timing-function: steps(27, end); }
+      30.83% { transform: translateX(0);       animation-timing-function: linear; }
+      33.33% { transform: translateX(0);       animation-timing-function: steps(28, end); }
+      43.33% { transform: translateX(285.6px); animation-timing-function: linear; }
+      59.16% { transform: translateX(285.6px); animation-timing-function: steps(28, end); }
+      64.16% { transform: translateX(0);       animation-timing-function: linear; }
+      66.66% { transform: translateX(0);       animation-timing-function: steps(26, end); }
+      76.66% { transform: translateX(265.2px); animation-timing-function: linear; }
+      92.5%  { transform: translateX(265.2px); animation-timing-function: steps(26, end); }
+      97.5%  { transform: translateX(0);       animation-timing-function: linear; }
+      100%   { transform: translateX(0); }
+    }
+    @keyframes blink { 0% { opacity: 1; } 55% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes p1 { 0%, 33.32% { opacity: 1; } 33.33%, 100% { opacity: 0; } }
+    @keyframes p2 { 0%, 33.32% { opacity: 0; } 33.33%, 66.65% { opacity: 1; } 66.66%, 100% { opacity: 0; } }
+    @keyframes p3 { 0%, 66.65% { opacity: 0; } 66.66%, 100% { opacity: 1; } }
+
+    /* Route: 600 units long, drawn at constant speed while the vehicle moves along it. */
+    .route { stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 10s linear infinite; }
+    .car { opacity: 0; animation: drive 10s linear infinite; }
+    .lit { opacity: 0; }
+    .ping { opacity: 0; transform-box: fill-box; transform-origin: center; animation: ping 10s ease-out infinite; }
+    .a { animation: litA 10s linear infinite; }
+    .b { animation: litB 10s linear infinite; }
+    .c { animation: litC 10s linear infinite; }
+    .d { animation: litD 10s linear infinite; }
+    .e { animation: litE 10s linear infinite; }
+    .pb { animation-delay: 1.81s; }
+    .pc { animation-delay: 2.88s; }
+    .pd { animation-delay: 4.69s; }
+    .pe { animation-delay: 6.4s; }
+    @keyframes draw {
+      0%   { stroke-dashoffset: 600; opacity: 1; }
+      64%  { stroke-dashoffset: 0;   opacity: 1; }
+      88%  { stroke-dashoffset: 0;   opacity: 1; }
+      96%  { stroke-dashoffset: 0;   opacity: 0; }
+      100% { stroke-dashoffset: 0;   opacity: 0; }
+    }
+    @keyframes drive {
+      0%      { transform: translate(500px, 230px); opacity: 0; }
+      1.5%    { opacity: 1; }
+      5.333%  { transform: translate(500px, 180px); }
+      18.133% { transform: translate(620px, 180px); }
+      28.8%   { transform: translate(620px, 80px); }
+      41.6%   { transform: translate(740px, 80px); }
+      46.933% { transform: translate(740px, 130px); }
+      53.333% { transform: translate(800px, 130px); }
+      64%     { transform: translate(800px, 30px); opacity: 1; }
+      88%     { transform: translate(800px, 30px); opacity: 1; }
+      96%     { transform: translate(800px, 30px); opacity: 0; }
+      100%    { transform: translate(800px, 30px); opacity: 0; }
+    }
+    @keyframes litA { 0% { opacity: 0; } 1.5% { opacity: 1; } 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes litB { 0%, 18.1% { opacity: 0; } 19.6% { opacity: 1; } 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes litC { 0%, 28.8% { opacity: 0; } 30.3% { opacity: 1; } 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes litD { 0%, 46.9% { opacity: 0; } 48.4% { opacity: 1; } 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes litE { 0%, 64% { opacity: 0; } 65.5% { opacity: 1; } 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @keyframes ping {
+      0%   { transform: scale(1);   opacity: 0.9; }
+      12%  { transform: scale(3.4); opacity: 0; }
+      100% { transform: scale(3.4); opacity: 0; }
+    }
+
+    /* Reduced motion: no travel. Show the finished route and one static line. */
+    @media (prefers-reduced-motion: reduce) {
+      .typer, .phrase, .car, .ping { display: none; animation: none; }
+      .static { display: inline; }
+      .route { animation: none; stroke-dashoffset: 0; }
+      .lit { animation: none; opacity: 1; }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="card"><rect width="840" height="260" rx="14"/></clipPath>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.5" stop-color="#1565c0" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1565c0" stop-opacity="0.34"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b2239" stop-opacity="1"/>
+      <stop offset="1" stop-color="#0b2239" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="840" height="260" fill="#0b2239"/>
+    <rect width="840" height="260" fill="url(#glow)"/>
+
+    <!-- Street grid -->
+    <g stroke="#c7d9e8" stroke-opacity="0.11" stroke-width="1">
+      <path d="M500 0V260M560 0V260M620 0V260M680 0V260M740 0V260M800 0V260"/>
+      <path d="M440 30H840M440 80H840M440 130H840M440 180H840M440 230H840"/>
+    </g>
+    <rect x="440" width="110" height="260" fill="url(#fade)"/>
+
+    <!-- Cameras the vehicle never passes -->
+    <g fill="#0b2239" stroke="#c7d9e8" stroke-opacity="0.4" stroke-width="1.5">
+      <circle cx="560" cy="130" r="4"/>
+      <circle cx="680" cy="180" r="4"/>
+      <circle cx="740" cy="230" r="4"/>
+      <circle cx="680" cy="30" r="4"/>
+      <circle cx="500" cy="230" r="4"/>
+      <circle cx="620" cy="180" r="4"/>
+      <circle cx="620" cy="80" r="4"/>
+      <circle cx="740" cy="130" r="4"/>
+      <circle cx="800" cy="30" r="4"/>
+    </g>
+
+    <!-- Reconstructed route -->
+    <path class="route" d="M500 230V180H620V80H740V130H800V30" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Cameras on the route: each confirms the vehicle as it passes -->
+    <g fill="none" stroke="#38bdf8" stroke-width="1.5">
+      <circle class="ping" cx="500" cy="230" r="5"/>
+      <circle class="ping pb" cx="620" cy="180" r="5"/>
+      <circle class="ping pc" cx="620" cy="80" r="5"/>
+      <circle class="ping pd" cx="740" cy="130" r="5"/>
+      <circle class="ping pe" cx="800" cy="30" r="5"/>
+    </g>
+    <g class="lit a"><circle cx="500" cy="230" r="5.5" fill="#38bdf8" stroke="#0b2239" stroke-width="2"/><text class="mono stamp" x="511" y="248">10:42:07</text></g>
+    <g class="lit b"><circle cx="620" cy="180" r="5.5" fill="#38bdf8" stroke="#0b2239" stroke-width="2"/><text class="mono stamp" x="631" y="198">10:43:31</text></g>
+    <g class="lit c"><circle cx="620" cy="80" r="5.5" fill="#38bdf8" stroke="#0b2239" stroke-width="2"/><text class="mono stamp" x="610" y="70" text-anchor="end">10:44:52</text></g>
+    <g class="lit d"><circle cx="740" cy="130" r="5.5" fill="#38bdf8" stroke="#0b2239" stroke-width="2"/><text class="mono stamp" x="730" y="148" text-anchor="end">10:47:15</text></g>
+    <g class="lit e"><circle cx="800" cy="30" r="5.5" fill="#38bdf8" stroke="#0b2239" stroke-width="2"/><text class="mono stamp" x="789" y="48" text-anchor="end">10:49:03</text></g>
+
+    <!-- Vehicle -->
+    <g class="car">
+      <circle r="11" fill="#fbbf24" fill-opacity="0.22"/>
+      <circle r="5" fill="#fbbf24"/>
+    </g>
+
+    <!-- Text -->
+    <text class="sans name" x="44" y="100">Vatsal Mehta</text>
+    <text class="sans tag" x="45" y="134">AI and full-stack developer · Ahmedabad, India</text>
+
+    <text class="mono prompt" x="45" y="184">&gt;</text>
+    <text class="mono phrase p1" x="65.4" y="184" textLength="275.4" lengthAdjust="spacing">multi-camera vision systems</text>
+    <text class="mono phrase p2" x="65.4" y="184" textLength="285.6" lengthAdjust="spacing">LLM agents and RAG pipelines</text>
+    <text class="mono phrase p3" x="65.4" y="184" textLength="265.2" lengthAdjust="spacing">satellite change detection</text>
+    <g class="typer">
+      <rect x="65.4" y="164" width="300" height="28" fill="#0b2239"/>
+      <rect class="cursor" x="67.4" y="168" width="9" height="20" fill="#7dd3fc"/>
+    </g>
+    <text class="mono static" x="65.4" y="184">vision systems · LLM agents · satellite imagery</text>
+  </g>
+  <rect x="0.5" y="0.5" width="839" height="259" rx="13.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.18"/>
+</svg>

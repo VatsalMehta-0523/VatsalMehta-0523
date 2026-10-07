@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Shield with a verdict check mark">
+  <style>
+    .scan { opacity: 0; animation: scan 4.5s linear infinite; }
+    .check { stroke-dasharray: 24; stroke-dashoffset: 24; animation: check 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
+    @keyframes scan {
+      0%   { transform: translateY(0);    opacity: 0; }
+      5%   { opacity: 0.9; }
+      32%  { transform: translateY(34px); opacity: 0.9; }
+      38%  { transform: translateY(34px); opacity: 0; }
+      100% { transform: translateY(34px); opacity: 0; }
+    }
+    @keyframes check {
+      0%, 38% { stroke-dashoffset: 24; opacity: 1; }
+      52%     { stroke-dashoffset: 0;  opacity: 1; }
+      88%     { stroke-dashoffset: 0;  opacity: 1; }
+      96%     { stroke-dashoffset: 0;  opacity: 0; }
+      100%    { stroke-dashoffset: 24; opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .check { animation: none; stroke-dashoffset: 0; }
+      .scan { display: none; animation: none; }
+    }
+  </style>
+  <defs>
+    <clipPath id="s"><path d="M24 5L40 11V23C40 33 33 40 24 43C15 40 8 33 8 23V11Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#s)">
+    <path class="scan" d="M6 7H42" stroke="#d29922" stroke-width="2"/>
+  </g>
+  <path d="M24 5L40 11V23C40 33 33 40 24 43C15 40 8 33 8 23V11Z" fill="none" stroke="#2f81f7" stroke-width="2.5" stroke-linejoin="round"/>
+  <path class="check" d="M16.5 24.5L22 30L32 18.5" fill="none" stroke="#3fb950" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

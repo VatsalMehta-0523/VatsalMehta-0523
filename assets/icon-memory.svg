@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Memory nodes fading and being recalled">
+  <style>
+    /* Each memory fades with disuse, then snaps back when it is recalled. */
+    .mem { animation: decay 6s linear infinite; }
+    .m2 { animation-delay: -1.5s; }
+    .m3 { animation-delay: -3s; }
+    .m4 { animation-delay: -4.5s; }
+    .core { transform-box: fill-box; transform-origin: center; animation: recall 1.5s ease-out infinite; }
+    @keyframes decay { 0% { opacity: 1; } 82% { opacity: 0.18; } 88% { opacity: 1; } 100% { opacity: 1; } }
+    @keyframes recall { 0% { transform: scale(1); opacity: 0.7; } 60% { transform: scale(2.1); opacity: 0; } 100% { transform: scale(2.1); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .mem { animation: none; opacity: 1; }
+      .core { display: none; animation: none; }
+    }
+  </style>
+  <g stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" fill="#8b949e">
+    <g class="mem"><path d="M24 24L9 11"/><circle cx="9" cy="11" r="3.6" stroke="none"/></g>
+    <g class="mem m2"><path d="M24 24L39 10"/><circle cx="39" cy="10" r="3.6" stroke="none"/></g>
+    <g class="mem m3"><path d="M24 24L38 38"/><circle cx="38" cy="38" r="3.6" stroke="none"/></g>
+    <g class="mem m4"><path d="M24 24L10 37"/><circle cx="10" cy="37" r="3.6" stroke="none"/></g>
+  </g>
+  <circle class="core" cx="24" cy="24" r="6" fill="none" stroke="#2f81f7" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="6" fill="#2f81f7"/>
+</svg>
